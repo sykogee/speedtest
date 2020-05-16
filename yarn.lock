@@ -6,7 +6,7 @@ bootstrap-daterangepicker@dangrossman/bootstrap-daterangepicker#^2.1.25:
   version "2.1.25"
   resolved "https://codeload.github.com/dangrossman/bootstrap-daterangepicker/tar.gz/29bbf5a04df69fda363cedb534272ac344524e57"
   dependencies:
-    jquery ">=1.10"
+    jquery ">=3.5.0"
     moment "^2.9.0"
 
 bootstrap@twbs/bootstrap#v4.0.0-beta:
