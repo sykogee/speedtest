@@ -4,7 +4,7 @@
 let appConfig = {
   "customTitle": "Statistics",
   "dateFormat": "DD.MM.YYYY",
-  "locale": "de",
+  "locale": "gb",
   "labels": {
     "download": "Download",
     "ping": "Ping",
