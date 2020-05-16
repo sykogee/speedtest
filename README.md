@@ -1,6 +1,6 @@
-# Docker Speedtest Analyser
+# Speedtest Analyser
 
-Automated docker speedtest analyser tool with included web interface to monitor your internet speed connection over time. Setup at home on your NAS (Synology, QNAP tested) and the container runs hourly speedtests. The speedtest results are displayed in an webinterface as line graph(s) over the day.
+Automated speedtest analyser docker container with included web interface to monitor your internet speed connection over time. Setup at home on your NAS (Synology, QNAP tested) and the container runs hourly speedtests. The speedtest results are displayed in an webinterface as line graph(s) over the day.
 
 This tool was created in reference to [this reddit post](https://www.reddit.com/r/technology/comments/43fi39/i_set_up_my_raspberry_pi_to_automatically_tweet/).  
 It used [speedtest-cli](https://github.com/sivel/speedtest-cli) to make speedtests and log them into a CSV file.  
@@ -24,10 +24,10 @@ You can get the publicly available docker image at the following location: [roes
 The SpeedTest analyser should to run out of the box with docker.
 
 **Important:** To keep the history of speedtest within a rebuild of
-the container please moint a volume in ``/var/www/html/data/``
+the container please mount a volume in ``/var/www/html/data/``
 
 ### Setup:
-1. Moint host volume onto ``/var/www/html/data/``
+1. Mount host volume onto ``/var/www/html/data/``
 2. Map preferred host port on port _80_
 3. Build container from image
 4. Enjoy continious speed statistics after a while
@@ -52,7 +52,7 @@ copy the ``/js/appConfig.example.js`` into ``/data/appConfig.js`` (where your vo
 6. speedtest-cli
 
 #### Licence
-I kindly ask not to re-distribute this repo on hub.docker.com if it's not indispensable.
+I kindly ask not to re-distribute this repo on hub.docker.com.
 
 ##### Disclaimer / Off topic
 I've written this small tool for private use on my Synology NAS.  
