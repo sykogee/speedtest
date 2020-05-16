@@ -8,10 +8,10 @@ After that you can visit the web interface to view a hourly - time filterable re
 your internet connectivity speed.
 
 # Screenshot
-![Statistic Screenshot](https://github.com/roest01/docker-speedtest-analyser/raw/master/speedlogger_screenshot.png?raw=true)
+![Statistic Screenshot](https://github.com/sykogee/speedtest/raw/master/speedlogger_screenshot.png?raw=true)
 
 # Docker Hub Image
-You can get the publicly available docker image at the following location: [roest/docker-speedtest-analyser](https://hub.docker.com/r/roest/docker-speedtest-analyser/).
+You can get the publicly available docker image at the following location: [sykogee/speedtest](https://hub.docker.com/r/sykogee/speedtest/).
 
 
 # Facts
@@ -36,7 +36,7 @@ the container please mount a volume in ``/var/www/html/data/``
 | Variable  | Type | Usage |  Example Value | Default |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | CRONJOB_ITERATION  | INT  | Time between speedtests in minutes. Value 15 means the cronjob runs every 15 minutes. Keep undefined to run hourly. | 15 | 60 |
-| SPEEDTEST_PARAMS  | STRING  | append extra parameter for cli command.<br/> `speedtest-cli --simple $SPEEDTEST_PARAMS` <br/> Check [parameter documentation](https://github.com/sivel/speedtest-cli#usage)  | --mini https://speedtest.test.fr | none |
+| SPEEDTEST_PARAMS  | STRING  | append extra parameter for cli command.<br/> `speedtest-cli --simple $SPEEDTEST_PARAMS` <br/> Check [parameter documentation](https://github.com/sivel/speedtest-cli#usage)  | --mini https://speedtest.net | none |
 
 # Config
 You can configure the visualization frontend via ``appConfig.js``
