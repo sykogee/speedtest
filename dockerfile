@@ -4,7 +4,7 @@ FROM alpine:latest
 MAINTAINER Andy Gibson - <andy.gibson80@outlook.com>
 
 # install dependencies
-RUN apk update && apk upgrade -y
+RUN apk update && apk upgrade
 RUN apk update && apk add \
   bash \
   git \
